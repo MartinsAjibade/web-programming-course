@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Project 4</title>
+        <meta charset="utf-8">
+        <link href="style.css" rel="stylesheet">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+             <h1>Accounting Data Converter</h1>
+        </header>
+        <main>
+            <p>
+                This program essentially converts records from semicolon-delimited
+                format into a comma-separated format(CSV).
+            </p>
+            
+            <form>
+                <label for="inputtedText">Enter your accounting record: </label>
+                <input type="text" id="inputtedText" name="inputtedText" placeholder="Enter...">
+                <input type="button" id="switch" value="Convert" 
+                onclick="separator(document.getElementById('inputtedText').value)">
+            </form>
+
+            <p id="result"></p>
+        </main>
+        <footer>
+             <!--Your footer goes here-->
+        </footer>
+    </body>
+</html>
