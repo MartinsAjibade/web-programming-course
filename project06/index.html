@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Project 6</title>
+        <meta charset="utf-8">
+        <link href="style.css" rel="stylesheet">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Let's Make a Deal!</h1>
+        </header>
+        <main>
+            <section id="instructions">
+                <h2>How to Play:</h2>
+                    <ol>
+                        <li>You will be presented with three doors, each hiding a different cash prize.</li>
+                        <li>Choose one door using your mouse or keyboard. Your prize will remain hidden.</li>
+                        <li>After you make your selection, the game will make you a cash offer to give up your chosen door.</li>
+                        <li>You can accept the cash offer, keep your original door, or switch to another door if given the option.</li>
+                        <li>Once you make your final decision, all three prizes will be revealed.</li>
+                        <li>The goal is to win as much money as possible, so choose wisely!</li>
+                    </ol>
+            </section>
+
+            <h2>Choose Your Door!</h2>
+
+            <section id="game">
+                <button type="button" id="door1">
+                    <img src="images/closed_door.png" alt="Door 1">
+                    Door 1(1)
+                </button>
+                <button type="button" id="door2">
+                    <img src="images/closed_door.png" alt="Door 2">
+                    Door 2(2)
+                </button>
+                <button type="button" id="door3">
+                    <img src="images/closed_door.png" alt="Door 3">
+                    Door 3(3)
+                </button>
+            </section>
+
+            <div id="gameMessage">
+                <p id="gameMessageText">Choose your door!</p>
+            </div>
+
+            <section id="dealer">
+                <h2>The Dealer's Offer</h2>
+                <p id="cashOffer">The dealer's offer will appear here.</p>
+                <button type="button" id="acceptOffer">Accept Offer(a)</button>
+                <button type="button" id="keepDoor">Keep My Door(k)</button>
+                <button type="button" id="switchDoor">Switch Door(s)</button>
+            </section>
+
+            <section id="finalResult">
+                <h2>The Big Reveal!</h2>
+                <p id="winnings">Your winnings will appear here!</p>
+                <p id="door1Prize"></p>
+                <p id="door2Prize"></p>
+                <p id="door3Prize"></p>
+            </section>
+
+            <input type="reset" value="Play Again(r)" id="playAgain">
+        </main>
+    </body>
+</html>
